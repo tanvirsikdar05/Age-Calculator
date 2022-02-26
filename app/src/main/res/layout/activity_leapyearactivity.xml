@@ -1,0 +1,487 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".leapyearactivity">
+
+    <ScrollView
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:id="@+id/sv"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:scrollbars="none">
+
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="vertical">
+
+
+
+
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:id="@+id/llDate"
+                android:orientation="vertical"
+                android:layout_margin="15dp">
+
+                <TextView
+                    android:textSize="30dp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/font"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:id="@+id/textView2"
+                    android:text="A year with 366 days instead of the normal 365 days is known as leap year. The extra day is added in February, which has 29 days instead of the normal 28 days. Leap years occur every 4 years. 2020 is a leap year and so is 2024. "
+                    android:textColor="@color/black"
+                    android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+
+                <LinearLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:id="@+id/LinearLayout02"
+                    android:orientation="vertical"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:textStyle="bold"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:id="@+id/TextView02"
+                        android:layout_marginTop="10dp"
+                        android:text="Enter the year"
+                        android:textColor="@color/colorPrimary"
+                        android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+                    <EditText
+                        android:layout_height="50dp"
+                        android:layout_width="match_parent"
+                        android:background="@drawable/border_edittext"
+                        android:id="@+id/etEnterYear"
+                        android:textColor="#ffffff"
+                        android:imeOptions="actionDone"
+                        android:inputType="number"
+                        android:numeric="integer"
+                        android:maxLength="4"
+                        android:hint="Year"
+                        android:paddingLeft="10dp"
+                        android:textColorHint="@color/colorGrey"
+                        android:textSize="20dp"/>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_height="80dp"
+                    android:layout_width="match_parent"
+                    android:background="@drawable/border_edittext"
+                    android:id="@+id/linearLayout3"
+                    android:orientation="vertical"
+                    android:layout_marginTop="15dp"
+                    android:gravity="center">
+
+
+                    <LinearLayout
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        android:id="@+id/LinearLayout01"
+                        android:gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="10dp"
+                        android:paddingTop="10dp">
+
+                        <TextView
+                            android:textStyle="bold"
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:id="@+id/TextView17"
+                            android:text="Total days in the year :"
+                            android:textColor="#25FF7C"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:layout_marginLeft="5dp"/>
+
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:id="@+id/tvTotalDays"
+                            android:text="0"
+                            android:textColor="#ffffff"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:layout_marginLeft="5dp"/>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        android:id="@+id/linearLayout4"
+                        android:gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="10dp"
+                        android:paddingBottom="10dp">
+
+                        <TextView
+                            android:textStyle="bold"
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:text="Is a Leap Year ?"
+                            android:textColor="#25FF7C"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:layout_marginLeft="5dp"/>
+
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:id="@+id/tvLeap"
+
+                            android:textColor="#ffffff"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:layout_marginLeft="5dp"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:id="@+id/TextView01"
+                    android:layout_marginTop="15dp"
+                    android:text="Result"
+                    android:textColor="@color/colorPrimary"
+                    android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+
+                <LinearLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:background="@drawable/border_edittext"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center_horizontal"
+                    android:padding="10dp">
+
+
+                    <LinearLayout
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:id="@+id/rl_tpresult"
+                        android:orientation="vertical"
+                        android:layout_marginRight="20dp">
+
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:id="@+id/TextView03"
+                            android:gravity="center"
+                            android:text="Month"
+                            android:textColor="#25FF7C"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:layout_weight="1"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:id="@+id/TextView04"
+                            android:layout_marginTop="5dp"
+                            android:gravity="center"
+                            android:text="January"
+                            android:textColor="@color/white"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:layout_weight="1"/>
+
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:id="@+id/TextView06"
+                            android:layout_marginTop="5dp"
+                            android:gravity="center"
+                            android:text="February"
+                            android:textColor="@color/white"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:layout_weight="1"/>
+
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:id="@+id/TextView07"
+                            android:layout_marginTop="5dp"
+                            android:gravity="center"
+                            android:text="March"
+                            android:textColor="@color/white"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:layout_weight="1"/>
+
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:id="@+id/TextView09"
+                            android:layout_marginTop="5dp"
+                            android:gravity="center"
+                            android:text="April "
+                            android:textColor="@color/white"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:layout_weight="1"/>
+
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:id="@+id/TextView08"
+                            android:layout_marginTop="5dp"
+                            android:gravity="center"
+                            android:text="May"
+                            android:textColor="@color/white"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:layout_weight="1"/>
+
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:id="@+id/TextView10"
+                            android:layout_marginTop="5dp"
+                            android:gravity="center"
+                            android:text="June"
+                            android:textColor="@color/white"
+                            android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:id="@+id/TextView31"
+                            android:layout_marginTop="5dp"
+                            android:gravity="center"
+                            android:text="July"
+                            android:textColor="@color/white"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:layout_weight="1"/>
+
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:id="@+id/TextView30"
+                            android:layout_marginTop="5dp"
+                            android:gravity="center"
+                            android:text="August"
+                            android:textColor="@color/white"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:layout_weight="1"/>
+
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:id="@+id/TextView21"
+                            android:layout_marginTop="5dp"
+                            android:gravity="center"
+                            android:text="September"
+                            android:textColor="@color/white"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:layout_weight="1"/>
+
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:id="@+id/TextView20"
+                            android:layout_marginTop="5dp"
+                            android:gravity="center"
+                            android:text="October"
+                            android:textColor="@color/white"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:layout_weight="1"/>
+
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:id="@+id/TextView16"
+                            android:layout_marginTop="5dp"
+                            android:gravity="center"
+                            android:text="November"
+                            android:textColor="@color/white"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:layout_weight="1"/>
+
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:id="@+id/TextView19"
+                            android:layout_marginTop="5dp"
+                            android:gravity="center"
+                            android:text="December"
+                            android:textColor="@color/white"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:layout_weight="1"/>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:id="@+id/RelativeLayout01"
+                        android:orientation="vertical"
+                        android:layout_marginLeft="20dp">
+
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:id="@+id/TextView11"
+                            android:gravity="center"
+                            android:text="Days"
+                            android:textColor="#25FF7C"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:layout_weight="1"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:id="@+id/tvJanuary"
+                            android:layout_marginTop="5dp"
+                            android:gravity="center"
+                            android:text="0"
+                            android:textColor="#ffffff"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:layout_weight="1"/>
+
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:id="@+id/tvFeb"
+                            android:layout_marginTop="5dp"
+                            android:gravity="center"
+                            android:text="0"
+                            android:textColor="#ffffff"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:layout_weight="1"/>
+
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:id="@+id/tvMarch"
+                            android:layout_marginTop="5dp"
+                            android:gravity="center"
+                            android:text="0"
+                            android:textColor="#ffffff"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:layout_weight="1"/>
+
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:id="@+id/tvApril"
+                            android:layout_marginTop="5dp"
+                            android:gravity="center"
+                            android:text="0"
+                            android:textColor="#ffffff"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:layout_weight="1"/>
+
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:id="@+id/tvMay"
+                            android:layout_marginTop="5dp"
+                            android:gravity="center"
+                            android:text="0"
+                            android:textColor="#ffffff"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:layout_weight="1"/>
+
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:id="@+id/tvJune"
+                            android:layout_marginTop="5dp"
+                            android:gravity="center"
+                            android:text="0"
+                            android:textColor="#ffffff"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:layout_weight="1"/>
+
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:id="@+id/tvJuly"
+                            android:layout_marginTop="5dp"
+                            android:gravity="center"
+                            android:text="0"
+                            android:textColor="#ffffff"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:layout_weight="1"/>
+
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:id="@+id/tvAug"
+                            android:layout_marginTop="5dp"
+                            android:gravity="center"
+                            android:text="0"
+                            android:textColor="#ffffff"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:layout_weight="1"/>
+
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:id="@+id/tvSept"
+                            android:layout_marginTop="5dp"
+                            android:gravity="center"
+                            android:text="0"
+                            android:textColor="#ffffff"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:layout_weight="1"/>
+
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:id="@+id/tvOct"
+                            android:layout_marginTop="5dp"
+                            android:gravity="center"
+                            android:text="0"
+                            android:textColor="#ffffff"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:layout_weight="1"/>
+
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:id="@+id/tvNov"
+                            android:layout_marginTop="5dp"
+                            android:gravity="center"
+                            android:text="0"
+                            android:textColor="#ffffff"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:layout_weight="1"/>
+
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:id="@+id/tvDesc"
+                            android:layout_marginTop="5dp"
+                            android:gravity="center"
+                            android:text="0"
+                            android:textColor="#ffffff"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:layout_weight="1"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+</RelativeLayout>

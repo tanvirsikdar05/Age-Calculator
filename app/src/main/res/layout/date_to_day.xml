@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".DateToDayActivity">
+    <TextView
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/colorPrimary"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Select Date"/>
+    <TextView
+        android:id="@+id/todaydates"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:gravity="center|start"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:background="@drawable/textinputborder"
+        android:paddingLeft="5dp" />
+    <TextView
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/colorPrimary"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Enter Days"/>
+
+    <EditText
+        android:id="@+id/enterdays"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/textinputborder"
+        android:hint="Enter Days"
+        android:paddingLeft="5dp"
+        android:gravity="center|start"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:maxLength="9"
+        android:inputType="numberSigned"
+
+         />
+
+    <TextView
+        android:textStyle="bold"
+        android:id="@+id/resulttxtview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/colorPrimary"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Result"/>
+
+    <TextView
+        android:id="@+id/resultshowbox"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/textinputborder"
+        android:paddingLeft="5dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="20sp"
+       />
+
+
+
+
+</LinearLayout>

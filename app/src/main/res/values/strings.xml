@@ -1,0 +1,150 @@
+<resources>
+    <string name="app_name">Age Calculator</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="share">Share it!</string>
+    <string name="feedback">Feedback</string>
+    <string name="more_apps">More Apps</string>
+    <string name="txtDtFrmt">Date Format</string>
+    <string name="txtTDt">"Today's Date"</string>
+    <string name="txtBd">Date of Birth</string>
+    <string name="txtCal">Calculate</string>
+    <string name="txtClr">Clear</string>
+    <string name="txtA">Your Age</string>
+    <string name="txtYs">Years</string>
+    <string name="txtMs">Months</string>
+    <string name="txtDs">Days</string>
+    <string name="txtNxtB">Next Birthday</string>
+    <string name="DATE_FORMATS">DATE_FORMATS</string>
+    <string name="txtExt">Extra Info</string>
+    <string name="txtAY">Total Years</string>
+    <string name="txtAM">Total Months</string>
+    <string name="txtAW">Total Weeks</string>
+    <string name="txtAD">Total Days</string>
+    <string name="txtAH">Total Hours</string>
+    <string name="txtAMn">Total Minutes</string>
+    <string name="txtAS">Total Seconds</string>
+    <string name="txtUCBd">Upcoming Birthdays</string>
+    <string name="txtZ">0</string>
+    <string name="txtDZ">00</string>
+    <string name="imgDesc">None</string>
+    <string name="txtdd"><i>dd</i></string>
+    <string name="appbar_scrolling_view_behavior">android.support.design.widget.AppBarLayout$ScrollingViewBehavior</string>
+    <string name="setDtF">Date Format</string>
+    <string name="reset">Date Format</string>
+    <string name="age">Your Age</string>
+    <string name="calculate">Calculate</string>
+    <string name="character_counter_pattern">%1$d / %2$d</string>
+    <string name="clear">Clear</string>
+    <string name="placeholder">placeholder</string>
+    <string name="placeholder_zero">00</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="project_id">age-calculator-117a8</string>
+    <string name="days">Days</string>
+    <string name="dd_mm_yyyy">DD/MM/YYYY</string>
+    <string name="today_date">"Today's Date"</string>
+    <string name="total_days">Total Days</string>
+    <string name="total_hours">Total Hours</string>
+    <string name="total_minutes">Total Minutes</string>
+    <string name="hyphen">--</string>
+    <string name="months">Months</string>
+    <string name="years">Years</string>
+    <string name="total_months">Total Months</string>
+    <string name="total_seconds">Total Seconds</string>
+    <string name="label_next_birthday">"Upcoming Birthday's"</string>
+    <string name="more_details">Extra Info</string>
+    <string name="more_detail">Upcoming Birthday</string>
+    <string name="dob_tag">dobTag</string>
+    <string name="date_today_tag">dateTodayTag</string>
+    <string name="hass">/</string>
+    <string name="hass1">/</string>
+    <string name="yyyy">yyyy</string>
+    <string name="today_s_date">Today\'s Date</string>
+    <string name="mm">mm</string>
+    <string name="date_ofbrith">Date of Brith</string>
+    <string name="n_birthday">Next Birthday</string>
+    <string name="policy">Total Months</string>
+    <string name="up_update">Update</string>
+
+
+    <string name="ad_unit_ap_id">ca-app-pub-3940256099942544~3347511713</string>
+    <string name="intartial_id">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="bannar_id">ca-app-pub-3940256099942544/6300978111</string>
+
+
+    <string name="txtCalculate">Calculate</string>
+    <string name="txtClear">Clear</string>
+
+
+    <string name="AgeCalculator">Age Calculator</string>
+    <string name="AgeDifferance">Age Differance</string>
+    <string name="AddBirthDay">Add Birth Day</string>
+    <string name="enter_name">Enter Name</string>
+    <string name="invalid_data">Invalid data</string>
+
+
+
+
+
+    <string-array name="পর্ব১">
+
+        <item>The passion of love I have for you will never fade. You will always remain to be my one and only. May this birthday bring everlasting joy in your life! Happy birthday! </item>
+        <item> You have managed to withstand the test of time together for a long time. On this special day, I pray to that he fills you love with love, laughter and happiness!</item>
+        <item> Happy birthday to you my dream girl. Many many happy returns of the day. Have a lot of fun and joys.</item>
+        <item>I have the most precious thing that life can offer to anyone. I have you, the most beautiful, gorgeous and lovable girl in the world. happy birthday! </item>
+        <item>You are the best thing ever happen with me, You are the sweet girl who always deserves the best things in the world. Happy birthday my love. May God bless you. Be happy! </item>
+        <item>My feelings for you grow stronger by each day. I cannot imagine a day in my life without loving you truly, madly and deeply. Happy birthday to you! </item>
+        <item> May the cheers of this day be with you in the coming years. May our love grow stronger each day! Happy birthday to my beautiful girlfriend!</item>
+        <item>I have got the best birthday gift for you, but it is worthless as compared to my love for you. Happy birthday. </item>
+
+
+
+        <item>I am so grateful to your parents that they have given birth to an angel like you! You are a true blessing. Many happy returns of the day! </item>
+        <item> I have so many reasons to love you but the one reason that makes me crazy about you is how special you make me feel all the time! Happy birthday!</item>
+        <item>I will remain blind to your real age if you promise me the biggest piece of your birthday cake. Does it seem fair enough? Happy birthday! </item>
+        <item>May God bless you with all of the wonderful desires of your heart and bless you to keep the many blessings that you already have. Happy Birthday, dear! </item>
+        <item>Every day with you is one great celebration and filled only with beautiful moments. I love you baby. Happy Birthday! </item>
+        <item>You are everything that one man could wish for. Therefore, I will try to return all the happiness that you brought into my life back to you. Happy birthday, my love! </item>
+
+
+        <item> “As you blow the candles on your birthday cake, I want to tell you what a wonderful wife you make. Without you in my life, my heart would have bled. With you, I look forward to a wonderful life ahead. Happy birthday, darling.”</item>
+        <item>“To my beautiful wife, I hope this year brings you as much joy and happiness that you have brought and continue to bring into my life. Happy birthday!” </item>
+        <item>“Best birthday wishes to the perfect woman in the world who chose to love an imperfect man like me. Happy birthday!” </item>
+        <item>“You are the sweetest thing in the world and you know how I cannot resist sweet things. Happy birthday, my dear.” </item>
+        <item>“I love your smile, I love your touch, I love your stares, I love your body, I love you! You are simply irresistible. Happy birthday, to my wife!” </item>
+        <item>“Here is to hoping our moments together are greater than the number of water drops in the Seven Seas and grains of sand in the deserts. Happy birthday!” </item>
+        <item>This momentous occasion does not only prove how much awesome your marriage is, but also shows us that you are a person with a pure heart. happy anniversary! </item>
+        <item>When two people share true love between them, their bond becomes ever lasting and full of happiness. Congratulations to you. Happy anniversary! </item>
+
+
+        <item>Always believe that no matter what goes wrong in life, you will always find peace in the hugs of your lovely partner. Happy anniversary! </item>
+        <item>When the love is true and pure, your days become bright and your life becomes filled with smiles. Congratulation to both of you on this day! </item>
+        <item>”There is no more lovely, friendly and charming relationship, communion or company than a good marriage.” </item>
+
+
+        <item>On your Birthday today, why do not you light one candle instead of blowing it out? May that candle bring you the light of good fortune in your life. Wishing you a Happy Birthday. </item>
+        <item>How do you plan to celebrate your yearly milestone that marks your race towards old age and death? Haha. Just kidding. Have a superb Birthday. </item>
+        <item> The best Birthday wish that you can get for the day is that may you live each moment of your life to the very fullest, without any regrets. Happy Birthday!</item>
+
+
+        <item>You may grow a year old every year, but I hope your spirit remains fresh and youthful. Happy Birthday! </item>
+        <item>You have another 365 days of your life waiting to give you a roller coaster ride to take you from one destination of happiness to another. Have a great Birthday. </item>
+
+        <item>On your Birthday, all I want to tell you is that you should be regret free and disease free! Wishing you a Happy Birthday. </item>
+        <item>Have you been moonlighting in my life as my pillar of strength and support while you are actually an angel sent from the heavens? You are too good to be true! I wish you a very Happy Birthday. </item>
+
+
+    </string-array>
+
+
+
+
+
+
+
+</resources>
+

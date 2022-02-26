@@ -1,0 +1,653 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AgeDifferenceActivity">
+
+
+
+    <ScrollView
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:id="@+id/sv"
+        android:layout_weight="1"
+        android:scrollbars="none">
+
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical">
+
+
+
+
+
+
+
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/llDate"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/LinearLayout02"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp">
+
+    <TextView
+        android:textStyle="bold"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="First Person Name and B'Date "
+        android:textColor="@color/colorPrimary"
+        android:textAppearance="?android:attr/textAppearanceMedium"/>
+        <TextView
+            android:id="@+id/dayname"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/lightRed"
+            android:layout_marginBottom="2dp"/>
+
+    <LinearLayout
+        android:layout_height="55dp"
+        android:layout_width="match_parent"
+        android:background="@drawable/textinputborder"
+        >
+        <EditText
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="13dp"
+            android:hint="@string/enter_name"
+            android:layout_marginLeft="7dp"
+            android:id="@+id/firstpersonname"
+            android:background="@null"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:singleLine="true"/>
+
+
+    </LinearLayout>
+
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:id="@+id/invaliddata"
+    android:visibility="gone">
+    <TextView
+        android:id="@+id/subinvaliddata1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/lightRed"
+        android:textStyle="bold"
+        android:text="@string/invalid_data"/>
+
+</LinearLayout>
+
+
+
+
+
+    <LinearLayout
+        android:layout_height="58dp"
+        android:layout_width="match_parent"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/textinputborder">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="3.3"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_height="match_parent">
+
+
+            <EditText
+
+                android:id="@+id/edittxtday1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#00000000"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:hint="@string/txtdd"
+                android:imeOptions="actionNext"
+                android:inputType="numberSigned"
+                android:padding="13.0dip"
+                android:selectAllOnFocus="true"
+                android:textColor="@android:color/black"
+                android:textCursorDrawable="@null"
+                android:textSize="25.0sp"
+                android:typeface="serif"
+                android:maxLength="2"/>
+
+            <TextView
+                android:id="@+id/tvSeprator1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/hass"
+                android:textColor="@android:color/black"
+                android:textSize="18.0sp"
+                android:typeface="serif" />
+
+            <EditText
+                android:id="@+id/edittxtm1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#00000000"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:hint="@string/mm"
+                android:imeOptions="actionNext"
+                android:inputType="numberSigned"
+                android:padding="13.0dip"
+                android:selectAllOnFocus="true"
+                android:maxLength="2"
+                android:textColor="@android:color/black"
+                android:textCursorDrawable="@null"
+                android:textSize="25.0sp"
+                android:typeface="serif" />
+
+            <TextView
+                android:id="@+id/tvSeprator2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/hass"
+                android:textColor="@android:color/black"
+                android:textSize="18.0sp"
+                android:typeface="serif" />
+
+            <EditText
+                android:id="@+id/edittxty1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#00000000"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:hint="@string/yyyy"
+                android:imeOptions="actionNext"
+                android:inputType="numberSigned"
+                android:padding="13.0dip"
+                android:selectAllOnFocus="true"
+                android:textColor="@android:color/black"
+                android:textCursorDrawable="@null"
+                android:textSize="25.0sp"
+                android:typeface="serif"
+                android:maxLength="4"/>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/ivclanderv1"
+                android:layout_width="0.0dip"
+                android:layout_height="@dimen/date_selector_height"
+                android:layout_weight="1.0"
+                android:background="@color/colorPrimary"
+                android:padding="10.0dip"
+                android:contentDescription="@string/imgDesc"
+                android:src="@drawable/cal" />
+
+        </LinearLayout>
+
+</LinearLayout>
+
+    <TextView
+        android:textStyle="bold"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/TextView01"
+        android:layout_marginTop="20dp"
+        android:text="Second Person Name and B'Date "
+        android:textColor="@color/colorPrimary"
+        android:textAppearance="?android:attr/textAppearanceMedium"/>
+        <TextView
+            android:id="@+id/dayname2"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/lightRed"
+            android:layout_marginBottom="2dp"/>
+        <LinearLayout
+            android:layout_height="55dp"
+            android:layout_width="match_parent"
+            android:background="@drawable/textinputborder">
+            <EditText
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="13dp"
+                android:hint="@string/enter_name"
+                android:layout_marginLeft="7dp"
+                android:id="@+id/secondpersonname"
+                android:background="@null"
+                android:singleLine="true"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:id="@+id/invaliddata2"
+            android:visibility="gone">
+            <TextView
+                android:id="@+id/subinvaliddata2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/invalid_data"
+                android:textColor="@color/lightRed"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_height="58dp"
+        android:layout_width="match_parent"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/textinputborder">
+
+
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="3.3"
+            android:layout_gravity="center"
+            android:gravity="center"
+
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/edittxtday2"
+                android:maxLength="2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#00000000"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:hint="@string/txtdd"
+                android:imeOptions="actionNext"
+                android:inputType="numberSigned"
+                android:padding="13.0dip"
+                android:selectAllOnFocus="true"
+                android:textColor="@android:color/black"
+                android:textCursorDrawable="@null"
+                android:textSize="25.0sp"
+                android:typeface="serif" />
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/hass"
+                android:textColor="@android:color/black"
+                android:textSize="18.0sp"
+                android:typeface="serif" />
+
+            <EditText
+                android:maxLength="2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#00000000"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:hint="@string/mm"
+                android:imeOptions="actionNext"
+                android:inputType="numberSigned"
+                android:padding="13.0dip"
+                android:selectAllOnFocus="true"
+                android:id="@+id/edittxtm2"
+                android:textColor="@android:color/black"
+                android:textCursorDrawable="@null"
+                android:textSize="25.0sp"
+                android:typeface="serif" />
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/hass"
+                android:textColor="@android:color/black"
+                android:textSize="18.0sp"
+                android:typeface="serif" />
+
+            <EditText
+                android:id="@+id/edittxty2"
+                android:maxLength="4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#00000000"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:hint="@string/yyyy"
+                android:imeOptions="actionNext"
+                android:inputType="numberSigned"
+                android:padding="13.0dip"
+                android:selectAllOnFocus="true"
+                android:textColor="@android:color/black"
+                android:textCursorDrawable="@null"
+                android:textSize="25.0sp"
+                android:typeface="serif" />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/ivclanderv2"
+                android:layout_width="0.0dip"
+                android:layout_height="@dimen/date_selector_height"
+                android:layout_weight="1.0"
+                android:background="@color/colorPrimary"
+                android:padding="10.0dip"
+                android:contentDescription="@string/imgDesc"
+                android:src="@drawable/cal" />
+
+        </LinearLayout>
+
+</LinearLayout>
+
+</LinearLayout>
+
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp">
+
+    <TextView
+        android:textStyle="bold"
+        android:layout_marginLeft="10dp"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:background="@drawable/btn_clear"
+        android:id="@+id/tvClear"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="@string/txtClear"
+        android:textColor="#ffffff"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp"/>
+
+    <View
+        android:layout_height="match_parent"
+        android:layout_width="0.5dp"
+        android:background="#ffffff"
+        android:id="@+id/view1"/>
+
+    <TextView
+        android:textStyle="bold"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:background="@drawable/btn_calculate"
+        android:id="@+id/tvCalculate"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="@string/txtCalculate"
+        android:textColor="#ffffff"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp"/>
+
+</LinearLayout>
+
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/llAge"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:layout_marginTop="20dp">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/textinputborder">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:text="Age Difference"
+            android:textColor="@color/colorPrimary"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="0dp"
+            android:layout_height="2dp"
+            android:background="#DD8BC34A"
+            app:layout_constraintEnd_toEndOf="@+id/textView"
+            app:layout_constraintStart_toStartOf="@id/textView"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+
+            app:layout_constraintTop_toBottomOf="@+id/view">
+
+            <TextView
+                android:id="@+id/agedyear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3"
+                android:textColor="#06a473"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Years "
+                android:textColor="#06a473"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/agedmonth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textColor="#06a473"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Months "
+                android:textColor="#06a473"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/agedday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textColor="#06a473"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Days "
+                android:textColor="#06a473"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+        <LinearLayout
+            android:id="@+id/layoutbox2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/textinputborder"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:weightSum="2">
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="80dp"
+                    android:src="@drawable/person1"/>
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="80dp"
+                    android:src="@drawable/person2"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2">
+                <TextView
+                    android:id="@+id/undername1"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="Tanvir"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimary"/>
+                <TextView
+                    android:id="@+id/undername2"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="Tanvir"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimary"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2">
+                <TextView
+                    android:id="@+id/prsn1curretage"
+                    android:padding="10dp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textColor="#06a473"
+                    android:text="18 years 6 monts 28 days"/>
+                <TextView
+                    android:id="@+id/prsn2curretage"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:textStyle="bold"
+                    android:textColor="#06a473"
+                    android:text="18 years 6 monts 28 days"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginBottom="2dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                >
+                <TextView
+                    android:id="@+id/prsnelder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:text="sumon"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:text=" Bigger Than "/>
+                <TextView
+                    android:id="@+id/prsnyunger"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:text="sumon"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+</LinearLayout>
+
+</LinearLayout>
+
+</LinearLayout>
+
+</ScrollView>
+
+
+
+
+
+</RelativeLayout>

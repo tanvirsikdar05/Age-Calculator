@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp">
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:background="#90000000">
+
+        <TextView
+            android:fontFamily="@font/font"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt"
+            android:text="text"
+            android:textSize="35sp"
+            android:layout_centerHorizontal="true"
+            android:textColor="#FFFFFF"
+            android:padding="10dp"/>
+
+
+
+
+<RelativeLayout
+    android:layout_marginTop="10dp"
+    android:layout_centerInParent="true"
+    android:layout_below="@id/txt"
+    android:layout_width="250dp"
+    android:layout_height="55dp">
+
+
+
+
+
+
+            <Button
+                android:textColor="@color/btnTextColor"
+                android:text="Share"
+                android:layout_marginBottom="3dp"
+               android:layout_toRightOf="@id/vm"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:id="@+id/share_btn"
+               android:background="@drawable/share"
+
+                />
+
+  <View
+      android:id="@+id/vm"
+     android:layout_centerInParent="true"
+      android:layout_width="15dp"
+      android:layout_height="10dp"/>
+
+    <Button
+        android:textColor="@color/btnTextColor"
+        android:id="@+id/copy"
+        android:layout_width="100dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="3dp"
+        android:layout_toLeftOf="@id/vm"
+        android:background="@drawable/copy"
+        android:text="Copy" />
+
+
+
+</RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
